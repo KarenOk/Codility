@@ -1,0 +1,259 @@
+<div class="coding-question__left-pane"><section><h1 class="question-view__title">2. Counterfeit Currency</h1></section><section class="question-view__instruction"><div class="candidate-rich-text"><div id="1rejrdet9aj-instruction"><style type="text/css">.ps-content-wrapper-v0 div { margin: 0 auto; overflow: auto; } .ps-content-wrapper-v0 div.preheader { display: none; } .ps-content-wrapper-v0 p { white-space: pre-wrap; padding-left: 4px; padding-right: 4px; padding-top: 0px; padding-bottom: 2px; } .ps-content-wrapper-v0 p.section-title { font-weight: bold; padding-bottom: 0px; } .ps-content-wrapper-v0 ol.plain-list, .ps-content-wrapper-v0 ul.plain-list { list-style-type: none; padding: 4px; } .ps-content-wrapper-v0 li { white-space: normal; margin-top: 4px; margin-bottom: 4px; } .ps-content-wrapper-v0 code { color: black; } .ps-content-wrapper-v0 pre { background-color: #f4faff; border: 0; border-radius: 2px; margin: 8px; padding: 10px; } .ps-content-wrapper-v0 pre.scrollable-full-json { overflow-x: scroll; white-space: pre; } .ps-content-wrapper-v0 pre.scrollable-json { height: 300px; overflow-y: scroll; display: inline-grid; white-space: pre-wrap; padding-left: 8px; padding-right: 8px; padding-top: 4px; padding-bottom: 4px; } .ps-content-wrapper-v0 div.equation-parent { width: 400px; text-align: center; border: 1px solid #000; padding: 8px; } .ps-content-wrapper-v0 div.equation-parent.equation { width: 100%; display: inline-block; } .ps-content-wrapper-v0 figure { background-color: transparent; display: table; margin-top: 8px; margin-bottom: 8px; text-align: center; margin-left: auto; margin-right: auto; } .ps-content-wrapper-v0 figcaption { text-align: center; display: table-caption; caption-side: bottom; margin-top: 4px; margin-bottom: 4px; } .ps-content-wrapper-v0 img { width: auto; max-width: 100%; height: auto; } .ps-content-wrapper-v0 details { background-color: transparent; padding-left: 4px; padding-right: 4px; padding-top: 0px; padding-bottom: 2px; } .ps-content-wrapper-v0 details details { padding-left: 8px; padding-right: 8px; } .ps-content-wrapper-v0 details summary { background-color: #39424e; color: white; font-weight: bold; margin-top: 4px; margin-bottom: 4px; padding: 8px; } .ps-content-wrapper-v0 details details summary code { color: black; font-weight: bold; padding-left: 2px; padding-right: 2px; padding-top: 4px; padding-right: 4px; margin-left: 4px; } .ps-content-wrapper-v0 details div.collapsable-details { margin: 0 auto; padding-left: 4px; padding-right: 4px; padding-top: 0px; padding-bottom: 2px; overflow: auto; } .ps-content-wrapper-v0 details div.collapsable-details pre { margin-left: 4px; margin-right: 4px; margin-top: 4px; margin-bottom: 4px; } .ps-content-wrapper-v0 table.normal { border: 1px solid black; border-collapse: collapse; border-color: darkgray; margin: 0 auto; margin-top: 8px; margin-bottom: 8px; padding: 8px; width: 96%; table-layout: fixed; } .ps-content-wrapper-v0 table.normal tbody { display: block; overflow-x: auto; overflow-y: hidden; } .ps-content-wrapper-v0 table.normal tbody tr:first-child th { font-weight: bold; white-space: normal; } .ps-content-wrapper-v0 table.normal tbody tr th, .ps-content-wrapper-v0 table.normal tbody tr td { font-weight: normal; white-space: nowrap; text-align: center; vertical-align: middle; border: 1px solid black; border-color: darkgray; padding: 8px; } .ps-content-wrapper-v0 table.database-table { border-collapse: collapse; border-color: darkgray; border: 1px solid black; width: auto; margin-left: 4px; margin-top: 8px; margin-bottom: 8px; padding: 8px; } .ps-content-wrapper-v0 table.database-table tbody { overflow-x: auto; overflow-y: hidden; border: none; } .ps-content-wrapper-v0 table.database-table tbody tr th, .ps-content-wrapper-v0 table.database-table tbody tr td { font-weight: normal; white-space: nowrap; text-align: center; vertical-align: middle; border: 1px solid black; border-color: darkgray; padding: 8px; } .ps-content-wrapper-v0 table.database-table tbody tr th { font-weight: bold; border: 1px solid black; } .ps-content-wrapper-v0 table.database-table tbody tr:nth-child(2) td { border: 1px solid black; } .ps-content-wrapper-v0 table.database-table tbody tr:nth-child(n+2) td:first-child { border-left-color: black; } .ps-content-wrapper-v0 table.database-table tbody tr:nth-child(n+2) td:last-child { border-right-color: black; } .ps-content-wrapper-v0 table.database-table tbody tr:last-child td { border-bottom-color: black; } .ps-content-wrapper-v0 table.database-table tbody tr td.description { text-align: left; white-space: pre-wrap; } .ps-content-wrapper-v0 table.normal tbody tr th.description { width: 60%; } .ps-content-wrapper-v0 table.function-params tbody tr:first-child td.headers { border-bottom-width: 2px; } .ps-content-wrapper-v0 table.function-params tbody tr:last-child td { border-top-width: 2px; border-top-color: darkgray; } .ps-content-wrapper-v0 table.function-params tbody tr td.headers { width: 25%; font-weight: bold; text-align: center; border: 1px solid black; border-right-width: 2px; border-color: darkgray; } .ps-content-wrapper-v0 table.function-params tbody tr td.params-table-cell { width: 100%; height: 100%; padding: 0px; } .ps-content-wrapper-v0 table.function-params tbody tr td.params-table-cell table.params-table { width: 100%; height: 100%; padding: 0px; margin: 0px; border: 0; } .ps-content-wrapper-v0 table.function-params tbody tr td.params-table-cell table.params-table tbody tr td.code { white-space: normal; } .ps-content-wrapper-v0 table.function-params tbody tr td.params-table-cell table.params-table tbody tr th { border-top: 0; } .ps-content-wrapper-v0 table.function-params tbody tr td.params-table-cell table.params-table tbody tr th:first-child { border-left: 0; } .ps-content-wrapper-v0 table.function-params tbody tr td.params-table-cell table.params-table tbody tr th:last-child { border-right: 0; } .ps-content-wrapper-v0 table.function-params tbody tr td.params-table-cell table.params-table tbody tr:last-child td { border-bottom: 0; border-top-width: 1px; } .ps-content-wrapper-v0 table.function-params tbody tr td.params-table-cell table.params-table tbody tr td:first-child { border-left: 0; } .ps-content-wrapper-v0 table.function-params tbody tr td.params-table-cell table.params-table tbody tr td:last-child { border-right: 0; } .ps-content-wrapper-v0 table.sudoku { border-collapse: collapse; border-color: darkgray; margin: 0 auto; margin-top: 8px; margin-bottom: 8px; padding: 8px; } .ps-content-wrapper-v0 table.sudoku colgroup, tbody { border: 3px solid black; } .ps-content-wrapper-v0 table.sudoku td { border: 1px solid black; height: 25px; width: 25px; text-align: center; padding: 0; } .ps-content-wrapper-v0 .left { text-align: left; } .ps-content-wrapper-v0 .right { text-align: right; } .ps-content-wrapper-v0 .code { font-family: monospace; white-space: nowrap; } .ps-content-wrapper-v0 .json-object-array ol, .ps-content-wrapper-v0 .json-object-array ol ul { margin-top: 0px; padding-left: 14px; } .json-object-array li { float: left; margin-right: 30px; margin-left: 10px; } .json-object-array pre { padding: 4px; margin-left: 0px; }
+</style>
+<div class="ps-content-wrapper-v0">
+<p>A counterfeit currency printer is operating in country XYZ, and all of the banks must try to identify the bad currency. Every note has a serial number that can be used to determine whether it is valid. The serial number also can be used to determine the denomination of the note. A valid serial number will have the following characteristics:</p>
+
+<ol>
+	<li>There are 10 to 12 characters</li>
+	<li>The first 3 characters are distinct uppercase English letters</li>
+	<li>The next 4 characters represent the year the note was printed and will always be between 1900 and 2019 inclusive.</li>
+	<li>The next characters represent the currency denomination and may be any one of {10, 20, 50, 100, 200, 500, 1000}</li>
+	<li>The last character is an uppercase English letter</li>
+</ol>
+
+<p>Given an array of serial numbers, determine the value of the valid currency.</p>
+
+<p>&nbsp;</p>
+
+<p>For example, serial numbers for <em>n = 8</em> notes are shown below.</p>
+
+<p>&nbsp;</p>
+
+<pre>Serial No.      Test 1 Test 2 Test 3 Test 4  Test 5 Valid Amt
+AVG190420T        ✔      ✔      ✔      ✔       ✔        20
+RTF20001000Z      ✔      ✔      ✔      ✔       ✔      1000
+QWER201850G       ✔      ✔      <span style="color:#e74c3c;">✗</span>      ✔       ✔&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;there is an R where the year is supposed to start
+AFA199620E        ✔      <span style="color:#e74c3c;">✗</span>      ✔      ✔       ✔        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;first three characters are not distinct
+ERT1947200T       ✔      ✔      ✔      ✔       ✔       200
+RTY20202004       ✔      ✔      <span style="color:#e74c3c;">✗</span>      ✔       <span style="color:#e74c3c;">✗</span>                the year 2020 is out of bounds, the last character is not an uppercase letter
+DRV1984500Y       ✔      ✔      ✔      ✔       ✔       500
+ETB2010400G       ✔      ✔      <span style="color:#e74c3c;">✗</span>      ✔       <span style="color:#e74c3c;">✗</span>                there are no bills for 400 denomination
+</pre>
+
+<p>&nbsp;</p>
+
+<p>In total, there are valid bills worth 20 + 1000 + 200 + 500 = 1720.</p>
+
+<p>&nbsp;</p>
+<!--
+<p>&nbsp;</p>
+
+<p>A counterfeit currency mafia is operating in country XYZ. All the banks in that country had trouble identifying counterfeit currency. Every note has a unique serial number and this serial number can be used to identify whether the note is valid or counterfeit. Also, a valid currency&#39;s value can be found out using its serial number itself.<br />
+All the valid currency notes of country XYZ satisfies all the following conditions:</p>
+
+<ol>
+	<li>There are a total of 10 to 12 characters in the serial number.</li>
+	<li>The first three characters denote the code of the printing press where the note&nbsp;was printed and it should be uppercase English alphabets and all the three characters should be different.</li>
+	<li>The next four characters denote the year in which the notes were printed. It can range from 1900 to 2019 both inclusive.</li>
+	<li>The next few characters denote the value of the currency note. It should be one among {10, 20, 50, 100, 200, 500, 1000}.</li>
+	<li>The last letter is an uppercase English&nbsp;alphabet.</li>
+</ol>
+
+<p>Your goal&nbsp;is&nbsp;to write a program which can help the banks of XYZ to find the total value of all the valid currency, i.e., the sum of the value of all the valid currency.<br />
+You will be given an array of various serial numbers and your program should return the total value of valid currencies among them.</p>
+
+<p>&nbsp;</p>
+
+<p>For example, there are <em>n</em> = 8 notes with the serial number as <em>serialNumber</em> = [&quot;AVG190420T&quot;, &quot;RTF20001000Z&quot;, &quot;QWER201850G&quot;, &quot;AFA199620E&quot;, &quot;ERT1947200T&quot;,&nbsp;&quot;RTY20202004&quot;, &quot;DRV1984500Y&quot;, &quot;ETB2010400G&quot;].</p>
+
+<p>AVG190420T is valid and its value is 20.</p>
+
+<p>RTF20001000Z is valid and its value is 1000.</p>
+
+<p>QWER201850G is counterfeit because its first four characters are English&nbsp;alphabets instead of just first three.&nbsp;</p>
+
+<p>AFA199620E is counterfeit because&nbsp;there is a repeating character among the first three characters.&nbsp;</p>
+
+<p>ERT1947200T is valid and its value is 200.</p>
+
+<p>RTY20202004 is counterfeit because the year is not in the valid range, moreover, the last character is not an English alphabet.&nbsp;</p>
+
+<p>DRV1984500Y is valid and its value is 500.</p>
+
+<p>ETB2010400G is counterfeit because the currency value 400 is not among the valid currency value.</p>
+
+<p>Therefore the total value of the bundle is 20 + 1000 + 200 + 500 = 1720</p>
+
+<p>&nbsp;</p>
+-->
+
+<p class="section-title">Function Description</p>
+
+<p>Complete the function <em>countCounterfeit</em> in the editor below. The function must return an integer sum of values of valid currency.</p>
+
+<p>&nbsp;</p>
+
+<p><em>countCounterfeit</em> has the following parameter(s):</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;<em>serialNumber[serialNumber[0],...serialNumber[n-1]]:</em>&nbsp; an array of strings</p>
+
+<p>&nbsp;</p>
+
+<p class="section-title">Constraints</p>
+
+<ul>
+	<li>0 &lt; <em>n</em> ≤ 10<sup>5</sup>
+</li>
+	<li>1 ≤ <em>|serialNumber[i]<sub>&nbsp;</sub>|≤ 14</em>
+</li>
+</ul>
+
+<p>&nbsp;</p>
+<!-- <StartOfInputFormat> DO NOT REMOVE THIS LINE-->
+
+<details><summary class="section-title">Input Format For Custom Testing</summary>
+
+<div class="collapsable-details">
+<p>The first line contains an integer, <em>n</em>, the number of elements in <em>serialNumber</em>.</p>
+
+<p>Each line <em>i</em> of the <em>n</em> subsequent lines (where <em>0 ≤ i &lt; n</em>) contains a string, <em>serialNumber[i]</em>.</p>
+</div>
+</details>
+<!-- </StartOfInputFormat> DO NOT REMOVE THIS LINE-->
+
+<details open="open"><summary class="section-title">Sample Case 0</summary>
+
+<div class="collapsable-details">
+<p class="section-title">Sample Input For Custom Testing</p>
+
+<pre>5
+A201550B
+ABB19991000Z
+XYZ200019Z
+ERF200220
+SCD203010T
+</pre>
+
+<p class="section-title">Sample Output</p>
+
+<pre>0</pre>
+
+<p class="section-title">Explanation</p>
+
+<p>Here, all the serial numbers are invalid. The total value is 0.</p>
+
+<p>A201550B is invalid because the serial number does not start with three distinct uppercase English letters and the serial number is too short.</p>
+
+<p>ABB19991000Z is invalid because the first three characters are not distinct.</p>
+
+<p>XYZ200019Z is invalid because 19 is not a valid denomination of a note.</p>
+
+<p>ERF200220 is invalid because the serial number does not end with an uppercase English letter and is too short.</p>
+
+<p>SCS20180T is invalid because 2030 is not a valid year and the serial number is too short.</p>
+</div>
+</details>
+
+<details><summary class="section-title">Sample Case 1</summary>
+
+<div class="collapsable-details">
+<p class="section-title">Sample Input For Custom Testing</p>
+
+<pre>6
+QDB2012R20B
+RED190250E
+RFV201111T
+TYU20121000E
+AAA198710B
+AbC200010E
+</pre>
+
+<p class="section-title">Sample Output</p>
+
+<pre>1050
+</pre>
+
+<p class="section-title">Explanation</p>
+
+<p>QDB2012R20B is invalid because there is an extra letter between the year and denomination substrings.</p>
+
+<p>RED190250E is valid and its value is 50.</p>
+
+<p>RFV201111T is invalid because 11 is not a valid denomination of a note.</p>
+
+<p>TYU20121000E is valid and its value is 1000.</p>
+
+<p>AAA198710B is invalid because the first three characters are not distinct.</p>
+
+<p>AbC200010E is invalid because the second character is not uppercase.</p>
+</div>
+</details>
+</div>
+</div></div></section></div>
+
+
+<script >
+// /*
+//  * Complete the 'countCounterfeit' function below.
+//  *
+//  * The function is expected to return an INTEGER.
+//  * The function accepts STRING_ARRAY serialNumber as parameter.
+//  */
+
+//  function countCounterfeit(serialNumbers) {
+//   // Write your code here
+//   let valid = 0;
+//   let validAmounts = [10, 20, 50, 100, 200, 500, 1000];
+//   if (serialNumbers.length === 0) return 0;
+
+//   for (let serialNumber of serialNumbers) {
+//     if (
+//       checkCount(serialNumber) &&
+//       checkDistictUpperCase(serialNumber.substring(0, 3)) &&
+//       checkYearRange(serialNumber.substring(3, 7)) &&
+//       checkValidAmount(serialNumber.substring(7, serialNumber.length - 1), validAmounts) &&
+//       checkLastChar(serialNumber[serialNumber.length - 1])
+//     ) {
+//       valid += Number(serialNumber.substring(7, serialNumber.length - 1)) ;
+//     }
+//   }
+
+//   console.log(valid)
+//   return valid;
+// }
+
+// function checkCount(str) {
+//   return str.length >= 10 && str.length <= 12 ? true : false;
+// }
+
+// function checkDistictUpperCase(str) {
+//   let code ;
+//   if (Number(str)) return false;
+
+//   for (let letter of str) {  
+//     code = letter.charCodeAt(0);
+//     if (!(code >= 65 && code <= 90 )) return false;
+//   }
+
+//   return str[0] !== str[1] && str[0] !== str[2] && str[1] !== str[2]
+//     ? true
+//     : false;
+// }
+
+// function checkYearRange(year) {
+//   if (!Number(year)) return false;
+//   return Number(year) >= 1900 && Number(year) <= 2019 ? true : false;
+// }
+
+// function checkValidAmount(amount, validAmounts) {
+//   if (!Number(amount)) return false;
+//   return validAmounts.find(elem => elem === Number(amount)) ? true : false;
+// }
+
+// function checkLastChar(char) {
+//   var code = char.charCodeAt(0);
+//   return code >= 65 && code <= 90 ? true : false;
+// }
+
+// var arr = [
+// "A201550B",
+// "ABB19991000Z",
+// "XYZ200019Z",
+// "ERF200220",
+// "SCD203010T",
+// "RED190250E"]
+
+// countCounterfeit(arr);
+
+
+ </script>
